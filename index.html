@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $("head").load("head.html");
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <script>
+    $("#header").load("header.html", function () {
+      $("#home_button").attr("class", "current");
+    });
+  </script>
+
+  <h3>AI Agents for Healthcare Workshop</h3>
+
+  <p>
+  This workshop explores the cutting-edge intersection of AI agents and healthcare, focusing on the critical challenges
+  and opportunities in developing and deploying intelligent systems capable of autonomous, robust, and ethical operation
+  within complex clinical environments. While sophisticated AI agents promise to revolutionize patient care, diagnostics,
+  research, and administration, significant hurdles in long-term memory and planning, grounded interaction, clinical
+  reasoning, ethical alignment, multi-agent collaboration, tool use, robustness, personalization, multi-modality, and
+  trustworthy evaluation persist.
+  </p>
+  <p>
+    AI in healthcare has advanced rapidly, with AI agents—systems capable of autonomous action, planning, and
+    interaction—gaining prominence for complex, multi-step tasks and continual learning.
+    Foundational works are outlining agent frameworks for healthcare.
+    Yet, current agent capabilities often fall short of healthcare’s complex, high-stakes demands.
+    The key challenges detailed below, spanning fundamental AI capabilities (memory, reasoning) to system-level concerns
+    (multi-agent cooperation, tool use) and ethics/robustness/evaluation, represent critical research frontiers.
+    This workshop will focus on addressing these critical research gaps:
+  </p>
+  
+  <ol>
+    <li>
+      <strong>Memory &amp; Continual Adaptation</strong> — maintain privacy-safe longitudinal memory, learn online from
+      clinician feedback, and preserve a consistent persona across chronic care.
+    </li>
+    <li>
+      <strong>Grounded, Multi-modal &amp; Interactive Agents</strong> — ensure robust grounding across text, imaging, and
+      sensor data while sustaining culturally appropriate, coherent dialogue over long encounters.
+    </li>
+    <li>
+      <strong>Clinical Reasoning &amp; Domain-specific Autonomy</strong> — achieve generalizable diagnostic reasoning
+      under uncertainty, with privacy-preserving data access and clearly bounded autonomous actions that escalate safely
+      to humans.
+    </li>
+    <li>
+      <strong>Alignment, Values &amp; Ethical Decision-making</strong> — align agents’ objectives with stakeholder values
+      and moral trade-offs in real-time, open-ended tasks with resource constraints.
+    </li>
+    <li>
+      <strong>Robustness, Global Generalization &amp; Trustworthy Evaluation</strong> — develop agents and evaluation
+      protocols that surface failures when systems are deployed beyond Western tertiary-care settings and majority-group
+      datasets.
+    </li>
+    <li>
+      <strong>Tool Use, Real-world Actuation &amp; Multi-agent Collaboration</strong> — provide formal mechanisms for safe
+      and well-coordinated multi-agent collaboration.
+    </li>
+    <li>
+      <strong>Human–AI Collaboration and Workflow Integration</strong> — enable transparent hand-offs, explainable
+      reasoning, and participatory development that fosters clinician and patient trust.
+    </li>
+  </ol>
+
+  <h2>Keynote Speakers</h2>
+  <div id="keynote-speakers"></div>
+  <script>
+    $("#keynote-speakers").load("keynote-speakers/index.html");
+  </script>
+
+  <h2>Panel Speakers</h2>
+  <div id="panel-speakers"></div>
+  <script>
+    $("#panel-speakers").load("panel-speakers/index.html");
+  </script>
+
+  <h2>Organizers</h2>
+  <div id="organizer-speakers"></div>
+  <script>
+    $("#organizer-speakers").load("organizers/index.html");
+  </script>
+
+  <h2>Sponsors</h2>
+  <div id="sponsors"></div>
+  <script>
+    $("#sponsors").load("sponsors/index.html");
+  </script>
+
+  <div id="footer"></div>
+  <script>
+    $("#footer").load("footer.html");
+  </script>
+</body>
+
+</html>
